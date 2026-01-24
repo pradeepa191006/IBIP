@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating doodles -->
+    <div class="doodles">
+        <span>⏰</span>
+        <span>📅</span>
+        <span>📝</span>
+        <span>☕</span>
+        <span>🏃‍♂️</span>
+        <span>💻</span>
+        <span>📖</span>
+        <span>🎯</span>
+        <span>📴</span>
+        <span>📐</span>
+    </div>
+
+    <div class="app-container">
+        <h1>📝 Smart To-Do App</h1>
+
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button onclick="startVoice()">🔊</button>
+            <button onclick="addTask()">Add Task</button>np
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

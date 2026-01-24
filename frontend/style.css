@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Gradient lifestyle background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+    overflow: hidden;
+}
+
+/* Floating doodles */
+.doodles span {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.25;
+    animation: float 12s linear infinite;
+}
+
+/* Random positions */
+.doodles span:nth-child(1) { left: 10%; animation-duration: 10s; }
+.doodles span:nth-child(2) { left: 25%; animation-duration: 14s; }
+.doodles span:nth-child(3) { left: 40%; animation-duration: 12s; }
+.doodles span:nth-child(4) { left: 55%; animation-duration: 16s; }
+.doodles span:nth-child(5) { left: 70%; animation-duration: 11s; }
+.doodles span:nth-child(6) { left: 85%; animation-duration: 15s; }
+.doodles span:nth-child(7) { left: 60%; animation-duration: 13s; }
+.doodles span:nth-child(8) { left: 30%; animation-duration: 17s; }
+
+@keyframes float {
+    0% {
+        top: 110%;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -10%;
+        transform: rotate(360deg);
+    }
+}
+
+/* App card */
+.app-container {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    margin: 80px auto;
+    background: rgba(201, 243, 255, 0.915);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input area */
+.input-box {
+    display: layout;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #8f5b5b;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ca76be;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f3f4ff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
